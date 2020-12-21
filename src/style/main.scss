@@ -1,0 +1,15 @@
+@import 'normalize.css/normalize';
+@import '_variables';
+@import '_classes';
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap');
+
+html, body, #root {
+  position: relative;
+  min-width: 360px;
+  height: 100%;
+  color: $primary-font-color;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

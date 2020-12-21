@@ -1,0 +1,16 @@
+@import 'src/style/_variables.scss';
+
+.index {
+  &_toTop {
+    color: black;
+    font-weight: $font-bold;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
+    outline: none;
+    background: none;
+    border: none;
+    transition: opacity 0.5s;
+  }
+}
