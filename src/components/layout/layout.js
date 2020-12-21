@@ -24,15 +24,25 @@ const Layout = ({ children }) => {
   `);
 
   return (
-    <>
-      Tu header
-      <div>
-        <main>{children}</main>
-        <footer>
-          Tu footer
-        </footer>
-      </div>
-    </>
+    <div className="content">
+      <header className="header">
+        <h1>
+          <a className="header__link"
+            href="/main"
+            title="Start"
+          >
+            <span className="header__link--distinction">T</span>omasz<br />
+            <span class="header__link--distinction">M</span>yśliwiec
+          </a>
+        </h1>
+        <h2>Front-end Developer</h2>
+      </header>
+      <nav className="menu">Menu</nav>
+      <main className="main">{children}</main>
+      <footer className="footer">
+        Tu footer
+      </footer>
+    </div>
   );
 };
 

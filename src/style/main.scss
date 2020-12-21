@@ -3,8 +3,7 @@
 @import '_classes';
 @import url('https://fonts.googleapis.com/css?family=Jura:400,300,500,600&subset=latin,latin-ext');
 
-html, body, #root {
-  position: relative;
+html, body {
   min-width: 360px;
   height: 100%;
   color: $primary-font-color;
@@ -12,4 +11,28 @@ html, body, #root {
   font-family: Jura, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.content {
+  display: grid;
+  grid-template-areas: 
+    "header header"
+    "menu main"
+    "footer footer";
+}
+
+.header {
+  grid-area: header;
+}
+
+.menu {
+  grid-area: menu;
+}
+
+.main {
+  grid-area: main;
+}
+
+.footer {
+  grid-area: footer;
 }
