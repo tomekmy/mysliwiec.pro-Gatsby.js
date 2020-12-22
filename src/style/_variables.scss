@@ -1,3 +1,43 @@
+// { Functions and variables
+  
+// body font size
+$base-font-size: 1em;
+$browser-context: 16;
+// active link color
+$active-link-color: #990000;
+// border input color
+$border-input: #dfdfe4;
+// border input active color
+$border-input-active: #a0a0a0;
+// function to convert px to em
+@function em($pixels, $context: $browser-context) {
+  @return #{$pixels/$context}em;
+}
+
+@function rem($pixels, $context: $browser-context) {
+  @return #{$pixels/$context}rem;
+}
+
+// Breakpoints
+$small-phone: '(min-width: 22.5em)'; // 360px
+$tablet-portrait: '(min-width: 48em)'; // 768px
+$tablet-landscape: '(min-width: 59.438em)'; // 951px
+$large-desktop: '(min-width: 64em)'; // 1024px
+$display-fullhd: '(min-width: 120em)'; // 1920px
+$display-wqhd: '(min-width: 160em)'; // 2560px
+$display-4k: '(min-width: 237.5em)'; // 3800px
+$non-retina: 'screen and (-webkit-max-device-pixel-ratio: 1)';
+
+// Media queries
+@mixin respond-to($media) {
+  @media only screen and #{$media} {
+    @content;
+  }
+}
+
+// } Functions and variables
+
+
 // Global variables
 $primary-font-color: #868686;
 $secondary-font-color: #404040;
