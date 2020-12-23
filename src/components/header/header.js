@@ -1,11 +1,9 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import styles from './header.module.scss';
 
-const Header = () => {
+import TextyAnim from 'rc-texty';
 
-  useEffect(() => {
-    
-  }, []);
+const Header = () => {
 
   return (
     <header className={styles.header}>
@@ -19,7 +17,13 @@ const Header = () => {
             <span className={styles.header__linkDistinction}>M</span>yśliwiec
           </a>
         </h1>
-        <h2>Front-end Developer</h2>
+        <TextyAnim
+          className={styles.header__animatedText}
+          type="left"
+          delay={2000}
+        >
+          Front-end Developer
+        </TextyAnim>
         <div className={styles.header__topVline} />
         <div className={styles.header__topHline1} />
       </div>

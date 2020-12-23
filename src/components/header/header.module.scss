@@ -20,6 +20,9 @@
       color: $active-link-color;
     }
   }
+  &__animatedText {
+    font-size: 2em;
+  }
   &__top-vline {
     position: absolute;
     width: 0.063rem;
