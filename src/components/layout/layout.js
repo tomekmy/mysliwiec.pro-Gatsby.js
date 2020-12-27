@@ -10,6 +10,7 @@ import 'src/i18n';
 import PropTypes from 'prop-types';
 import { useStaticQuery, graphql } from 'gatsby';
 import Header from '../header/header';
+import Menu from '../menu/menu';
 
 import './layout.scss';
 
@@ -27,7 +28,7 @@ const Layout = ({ children }) => {
   return (
     <div className="content">
       <Header />
-      <nav className="menu">Menu</nav>
+      <Menu />
       <main className="main">{children}</main>
       <footer className="footer">
         Tu footer

@@ -20,13 +20,13 @@ const Header = () => {
         <TextyAnim
           className={styles.header__animatedText}
           type="left"
-          delay={2000}
+          delay={1000}
         >
           Front-end Developer
         </TextyAnim>
-        <div className={styles.header__topVline} />
-        <div className={styles.header__topHline1} />
       </div>
+      <div className={styles.header__topVline} />
+      <div className={styles.header__topHline1} />
     </header>
   );
 };

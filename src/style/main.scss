@@ -1,38 +1,110 @@
-@import 'normalize.css/normalize';
+@import 'reset-css';
 @import '_variables';
 @import '_classes';
 @import url('https://fonts.googleapis.com/css?family=Jura:400,300,500,600&subset=latin,latin-ext');
 
 html, body {
-  min-width: 360px;
-  height: 100%;
-  color: $primary-font-color;
-  margin: 0;
+  color: #1b1b1b;
   font-family: Jura, sans-serif;
+  background: #fff;
+  text-align: center;
+  width: 100%;
+  min-width: 290px;
+  height: 100%;
+  margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+@media only screen and (min-width:120em) {
+  body,
+  html {
+      font-size: 1.11em;
+  }
+}
+
+@media only screen and (min-width:160em) {
+  body,
+  html {
+      font-size: 1.3em;
+  }
+}
+
+@media only screen and (min-width:237.5em) {
+  body,
+  html {
+      font-size: 1.6em;
+  }
+}
+
+a {
+  color: #300;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #900;
+}
+
+.active a,
+a:focus {
+  color: #900;
+  outline: none;
+}
+
+p {
+  margin-bottom: .375em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+strong {
+  color: #000;
+}
+
+h1 {
+  font-size: 2.375em;
+  margin-bottom: .2em;
+}
+
+h2 {
+  font-size: 1.1875em;
+}
+
+h3 {
+  font-size: 1.75em;
+  line-height: 1;
+  margin-bottom: 1.25em;
+}
+
+h3,
+h4 {
+  text-align: center;
+}
+
+h4 {
+  font-size: 1.275em;
+  margin-bottom: 1.875em;
+}
+
+h5 {
+  font-size: 1.5625em;
+  margin: .125rem 0 1.25rem;
+}
+
 .content {
+  position: relative;
+  width: 95%;
+  margin: 0 auto;
   display: grid;
   grid-template-areas: 
     "header header"
     "menu main"
     "footer footer";
-}
-
-.header {
-  grid-area: header;
-}
-
-.menu {
-  grid-area: menu;
-}
-
-.main {
-  grid-area: main;
-}
-
-.footer {
-  grid-area: footer;
+  @include respond-to($large-desktop) {
+    width: 90%;
+  }
 }

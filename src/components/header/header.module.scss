@@ -6,23 +6,31 @@
   text-align: left;
   height: 8em;
   z-index: 999;
+  grid-area: header;
+
   &__logo {
     margin: rem(10) 0 0 rem(20);
     float: left;
   }
+
   &__link {
     color: #000000;
     text-decoration: none;
+
     &:hover {
       color: #000000;
     }
+
     &:hover &--distinction {
       color: $active-link-color;
     }
   }
+
   &__animatedText {
-    font-size: 2em;
+    font-size: em(19);
+    color: #000000;
   }
+
   &__top-vline {
     position: absolute;
     width: 0.063rem;
@@ -30,10 +38,12 @@
     background: #000000;
     background: -webkit-gradient(linear, left top, left bottom, color-stop(75%, #000000), to(#ffffff));
     background: linear-gradient(to bottom, #000000 75%, #ffffff 100%);
+
     @include respond-to($tablet-portrait) {
       height: 25em;
     }
   }
+
   &__top-hline1 {
     position: absolute;
     bottom: 0;
@@ -44,6 +54,7 @@
     background: #000000;
     background: -webkit-gradient(linear, left top, right top, color-stop(55%, #000), to(#fff));
     background: linear-gradient(to right, #000 55%, #fff 100%);
+
     @include respond-to($large-desktop) {
       width: 20em;
     }
