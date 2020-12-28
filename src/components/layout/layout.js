@@ -11,6 +11,7 @@ import PropTypes from 'prop-types';
 import { useStaticQuery, graphql } from 'gatsby';
 import Header from '../header/header';
 import Menu from '../menu/menu';
+import Footer from '../footer/footer';
 
 import './layout.scss';
 
@@ -30,9 +31,7 @@ const Layout = ({ children }) => {
       <Header />
       <Menu />
       <main className="main">{children}</main>
-      <footer className="footer">
-        Tu footer
-      </footer>
+      <Footer />
     </div>
   );
 };

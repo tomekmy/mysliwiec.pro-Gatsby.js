@@ -3,7 +3,7 @@
 // { Menu
 .menu {
   grid-area: menu;
-  position: absolute;
+  position: relative;
   right: 0;
   margin-top: 0.3em;
   font-size: em(22);
@@ -88,14 +88,53 @@
 
   &__item--link {
     text-decoration: none;
-    -webkit-transition: color 0.3s ease-in-out;
-    transition: color 0.3s ease-in-out;
-    color: #1b1b1b;
+    position: relative;
+    animation: slideOutLeft 0.5s ease-in-out 0s 1 normal forwards;
 
     &:hover {
-      color: $active-link-color;
+      animation: slideInRight 0.5s ease-in-out 0s 1 normal forwards;
     }
   }
+
+  @keyframes slideInRight {
+    0% {
+      padding-left: 0px;
+      color: #1b1b1b;
+    }
+    100% {
+      padding-left: 20px;
+      color: $active-link-color;
+    }
+  } 
+
+  @keyframes slideOutLeft {
+    0% {
+      padding-left: 20px;
+      color: $active-link-color;
+    }
+    40% {
+      padding-left: 0px;
+    }
+    50% {
+      padding-left: 15px;
+    }
+    60% {
+      padding-left: 0px;
+    }
+    70% {
+      padding-left: 10px;
+    }
+    80% {
+      padding-left: 0px;
+    }
+    70% {
+      padding-left: 5px;
+    }
+    100% {
+      padding-left: 0px;
+      color: #1b1b1b;
+    }
+  } 
 
   &__item--linkActive {
     color: $active-link-color;
@@ -137,7 +176,6 @@
   @include respond-to($tablet-portrait) {
     float: left;
     left: 0;
-    width: 15%;
     margin-top: 0;
     padding: em(32) 0 em(32) rem(20);
   }

@@ -104,7 +104,13 @@ h5 {
     "header header"
     "menu main"
     "footer footer";
+  grid-template-columns: 15% 85%;
+
   @include respond-to($large-desktop) {
     width: 90%;
   }
+}
+
+.main {
+  grid-area: main;
 }
