@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './header.module.scss';
 
-import TextyAnim from 'rc-texty';
+import Bounce from 'react-reveal/Bounce';
 
 const Header = () => {
 
@@ -17,13 +17,15 @@ const Header = () => {
             <span className={styles.header__linkDistinction}>M</span>yśliwiec
           </a>
         </h1>
-        <TextyAnim
-          className={styles.header__animatedText}
-          type="left"
-          delay={1000}
-        >
-          Front-end Developer
-        </TextyAnim>
+        <h2>
+          <Bounce
+            left
+            cascade
+            delay={300}
+          >
+            Front-end Developer
+          </Bounce>
+        </h2>
       </div>
       <div className={styles.header__topVline} />
       <div className={styles.header__topHline1} />
