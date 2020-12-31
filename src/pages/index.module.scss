@@ -1,0 +1,21 @@
+@import 'src/style/_variables';
+
+.home {
+  &__text {
+    margin: 0 auto;
+    padding: 0 3% rem(80) 3%;
+    text-align: left;
+    font-size: em(28);
+    line-height: 1.2;
+    max-width: 15em;
+
+    &--paragraph {
+      margin-bottom: .375em;
+    }
+
+    @include respond-to($tablet-landscape) {
+      margin-left: 18.5%;
+      padding: 0;
+    }
+  }
+}
