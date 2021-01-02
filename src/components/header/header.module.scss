@@ -4,7 +4,7 @@
   position: relative;
   left: 0px;
   text-align: left;
-  height: 8em;
+  height: 8rem;
   z-index: 999;
   grid-area: header;
 
@@ -29,13 +29,13 @@
   &__top-vline {
     position: absolute;
     width: 0.063rem;
-    height: 11.5em;
+    height: 11.5rem;
     background: #000000;
     background: -webkit-gradient(linear, left top, left bottom, color-stop(75%, #000000), to(#ffffff));
     background: linear-gradient(to bottom, #000000 75%, #ffffff 100%);
 
     @include respond-to($tablet-portrait) {
-      height: 25em;
+      height: 25rem;
     }
   }
 
@@ -43,7 +43,7 @@
     position: absolute;
     bottom: 0;
     left: -5.55%;
-    width: 18em;
+    width: 18rem;
     min-width: 300px;
     height: 0.063rem;
     background: #000000;
@@ -51,7 +51,7 @@
     background: linear-gradient(to right, #000 55%, #fff 100%);
 
     @include respond-to($large-desktop) {
-      width: 20em;
+      width: 20rem;
     }
   }
 }

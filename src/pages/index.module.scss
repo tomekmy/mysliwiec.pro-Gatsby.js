@@ -5,12 +5,12 @@
     margin: 0 auto;
     padding: 0 3% rem(80) 3%;
     text-align: left;
-    font-size: em(28);
+    font-size: rem(28);
     line-height: 1.2;
-    max-width: 15em;
+    max-width: 15rem;
 
     &--paragraph {
-      margin-bottom: .375em;
+      margin-bottom: .375rem;
     }
 
     @include respond-to($tablet-landscape) {

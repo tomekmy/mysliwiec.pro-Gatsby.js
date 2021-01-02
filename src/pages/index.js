@@ -18,7 +18,7 @@ const IndexPage = () => {
           <Flip
             left
             cascade
-            delay={50}
+            delay={250}
             duration={450}
           >
             {t('main.mainText1')}
@@ -28,16 +28,16 @@ const IndexPage = () => {
           <Flip
             left
             cascade
-            delay={450}
-            duration={4000}
+            delay={400}
+            duration={1500}
           >
             {t('main.mainText2')}
           </Flip>
           <Flip
             left
             cascade
-            delay={2000}
-            duration={1000}
+            delay={1000}
+            duration={1300}
           >
             {t('main.mainText3')}
           </Flip>
@@ -46,16 +46,16 @@ const IndexPage = () => {
           <Flip
             left
             cascade
-            delay={450}
-            duration={4000}
+            delay={1700}
+            duration={1500}
           >
             {t('main.mainText4')}
           </Flip>
           <Flip
             left
             cascade
-            delay={2000}
-            duration={1000}
+            delay={2200}
+            duration={1300}
           >
             {t('main.mainText5')}
           </Flip>

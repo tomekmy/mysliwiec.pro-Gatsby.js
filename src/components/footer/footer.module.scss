@@ -1,5 +1,121 @@
 @import 'src/style/_variables';
 
-.footer {
-  grid-area: footer;
-}
+// { Footer
+  .footer {
+    grid-area: footer;
+    align-self: end;
+    position: relative;
+    height: 5rem;
+
+    &__image {
+      width: rem(25);
+      height: rem(25);
+    }
+    
+    &__link {
+      width: rem(25);
+      height: rem(25);
+      margin: 0 rem(5);
+      display: inline-block;
+    }
+    
+    &__icon {
+      padding-left: rem(20);
+      display: table-cell;
+      vertical-align: middle;
+    }
+    
+    &__language {
+      float: right;
+      padding: rem(26) rem(20);
+    }
+    
+    &__hline {
+      position: absolute;
+      top: 0px;
+      left: -5.55%;
+      width: 27%;
+      min-width: 260px;
+      height: 0.063rem;
+      background: #000000;
+      background: -webkit-gradient(linear, left top, right top, color-stop(80%, #000000), to(#ffffff));
+      background: linear-gradient(to right, #000000 80%, #ffffff 100%);
+    }
+    
+    &__vline {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0.063rem;
+      height: rem(266);
+      background: #ffffff;
+      background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), color-stop(55%, #000000), to(#000000));
+      background: linear-gradient(to bottom, #ffffff 0%, #000000 55%, #000000 100%);
+    }
+    
+    &__hline-right {
+      position: absolute;
+      top: 0px;
+      right: -2.692%;
+      width: 15%;
+      min-width: 100px;
+      height: 0.063rem;
+      background: #000000;
+      background: -webkit-gradient(linear, right top, left top, color-stop(80%, #000000), to(#ffffff));
+      background: linear-gradient(to left, #000000 80%, #ffffff 100%);
+      @include respond-to($large-desktop) {
+        right: -5.55%;
+      }
+    }
+    
+    &__vline-right {
+      position: absolute;
+      bottom: 0px;
+      right: 0px;
+      width: 0.063rem;
+      height: rem(200);
+      background: #ffffff;
+      background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), color-stop(55%, #000000), to(#000000));
+      background: linear-gradient(to bottom, #ffffff 0%, #000000 55%, #000000 100%);
+    }
+
+    &__image:hover,
+    &__icon a:hover,
+    &__language a:hover {
+      -webkit-animation-name: hvr-buzz;
+      animation-name: hvr-buzz;
+      -webkit-animation-duration: 0.15s;
+      animation-duration: 0.15s;
+      -webkit-animation-timing-function: linear;
+      animation-timing-function: linear;
+      -webkit-animation-iteration-count: infinite;
+      animation-iteration-count: infinite;
+    }
+  }
+  
+  // } Footer
+  
+  /* Buzz hover effect */
+  
+  @-webkit-keyframes hvr-buzz {
+    50% {
+      -webkit-transform: translateX(3px) rotate(2deg);
+      transform: translateX(3px) rotate(2deg);
+    }
+    100% {
+      -webkit-transform: translateX(-3px) rotate(-2deg);
+      transform: translateX(-3px) rotate(-2deg);
+    }
+  }
+  
+  @keyframes hvr-buzz {
+    50% {
+      -webkit-transform: translateX(3px) rotate(2deg);
+      transform: translateX(3px) rotate(2deg);
+    }
+    100% {
+      -webkit-transform: translateX(-3px) rotate(-2deg);
+      transform: translateX(-3px) rotate(-2deg);
+    }
+  }
+  

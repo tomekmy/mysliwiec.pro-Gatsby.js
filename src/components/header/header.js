@@ -21,7 +21,7 @@ const Header = () => {
           <Bounce
             left
             cascade
-            delay={300}
+            duration={1700}
           >
             Front-end Developer
           </Bounce>

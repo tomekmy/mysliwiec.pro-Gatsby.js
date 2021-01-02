@@ -5,15 +5,16 @@
   grid-area: menu;
   position: relative;
   right: 0;
-  margin-top: 0.3em;
-  font-size: em(22);
+  height: fit-content;
+  margin-top: 0.3rem;
+  font-size: rem(22);
   text-align: left;
   z-index: 999;
 
   &__icon {
     position: relative;
     float: right;
-    top: -5.9em;
+    top: -5.9rem;
     cursor: pointer;
     z-index: 9999;
 
@@ -64,7 +65,7 @@
     @include respond-to($small-phone) {
       position: absolute;
       text-align: left;
-      top: -5.7em;
+      top: -5.7rem;
       right: 4px;
       width: auto;
       padding: 0;
@@ -83,7 +84,7 @@
 
   &__item {
     position: relative;
-    margin-bottom: 0.5em;
+    margin-bottom: 0.5rem;
 
     div {
       text-align: center;
@@ -128,10 +129,10 @@
   &__left-line {
     position: absolute;
     display: block;
-    top: -0.5em;
-    left: -0.4em;
+    top: -0.5rem;
+    left: -0.4rem;
     width: 0.063rem;
-    height: 7.2em;
+    height: 7.2rem;
     background: #000000;
     background: -webkit-gradient(linear, left top, left bottom, color-stop(75%, #000000), to(#ffffff));
     background: linear-gradient(to bottom, #000000 75%, #ffffff 100%);
@@ -145,7 +146,7 @@
     float: left;
     left: 0;
     margin-top: 0;
-    padding: em(32) 0 em(32) rem(20);
+    padding: rem(32) 0 rem(32) rem(20);
   }
 }
 
