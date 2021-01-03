@@ -8,7 +8,6 @@
 import React from 'react';
 import 'src/i18n';
 import PropTypes from 'prop-types';
-import { useStaticQuery, graphql } from 'gatsby';
 import Header from '../header/header';
 import Menu from '../menu/menu';
 import Footer from '../footer/footer';
@@ -16,15 +15,6 @@ import Footer from '../footer/footer';
 import './layout.scss';
 
 const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `);
 
   return (
     <div className="content">

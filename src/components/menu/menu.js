@@ -39,7 +39,7 @@ const Menu = () => {
             Portfolio
           </Link>
         </li>
-        <li className={styles.menu__item}>
+        <li className={`${styles.menu__item} ${styles.menu__itemLast}`}>
           <Link
             className={styles.menu__itemLink}
             activeClassName={styles.menu__itemLinkActive}

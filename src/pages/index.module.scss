@@ -3,18 +3,18 @@
 .home {
   &__text {
     margin: 0 auto;
-    padding: 0 3% rem(80) 3%;
+    padding: 0 3% 12.8rem 3%;
     text-align: left;
-    font-size: rem(28);
+    font-size: 3.5rem;
     line-height: 1.2;
-    max-width: 15rem;
+    max-width: 51.7rem;
 
     &--paragraph {
-      margin-bottom: .375rem;
+      margin-bottom: 1.3rem;
     }
 
     @include respond-to($tablet-landscape) {
-      margin-left: 18.5%;
+      margin-left: 21%;
       padding: 0;
     }
   }

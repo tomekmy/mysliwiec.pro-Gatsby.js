@@ -10,7 +10,7 @@ const Footer = () => {
 
   return (
     <footer className={styles.footer}>
-      <div className={styles.footer__icon}>
+      <div className={styles.footer__icons}>
         <a
           className={styles.footer__link}
           href="https://www.facebook.com/mysliwiec.pro/"
@@ -45,7 +45,7 @@ const Footer = () => {
           />
         </a>
       </div>
-      <div className="styles.footer__languages">
+      <div className={styles.footer__languages}>
         <a
           href="#lang"
           className={styles.footer__langIcon}
