@@ -1,13 +1,14 @@
 export const pl = {
-  'sendOk': 'Ok! Dzięki.',
-  'sendError': 'Ups... Błąd!',
-  'menu': {
-    'main': 'START',
-    'about': 'O MNIE',
-    'portfolio': 'PORTFOLIO',
-    'contact': 'KONTAKT'
+  frontEndDeveloper: 'Front-end Developer',
+  sendOk: 'Ok! Dzięki.',
+  sendError: 'Ups... Błąd!',
+  menu: {
+    main: 'START',
+    about: 'O MNIE',
+    portfolio: 'PORTFOLIO',
+    contact: 'KONTAKT'
   },
-  'main': {
+  main: {
     mainText1: 'Witaj.',
     mainText2: 'Jestem Web Develeoperem /',
     mainText3: 'Front-end Developerem.',

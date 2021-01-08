@@ -1,8 +1,10 @@
 import React from 'react';
 import { Link } from 'gatsby';
+import { useTranslation } from 'react-i18next';
 import styles from './menu.module.scss';
 
 const Menu = () => {
+  const { t } = useTranslation();
 
   return (
     <nav className={styles.menu}>
@@ -18,7 +20,7 @@ const Menu = () => {
             activeClassName={styles.menu__itemLinkActive}
             to="/"
           >
-            Start
+            {t('menu.main')}
           </Link>
         </li>
         <li className={styles.menu__item}>
@@ -27,7 +29,7 @@ const Menu = () => {
             activeClassName={styles.menu__itemLinkActive}
             to="/about"
           >
-            O mnie
+            {t('menu.about')}
           </Link>
         </li>
         <li className={styles.menu__item}>
@@ -36,7 +38,7 @@ const Menu = () => {
             activeClassName={styles.menu__itemLinkActive}
             to="/portfolio"
           >
-            Portfolio
+            {t('menu.portfolio')}
           </Link>
         </li>
         <li className={`${styles.menu__item} ${styles.menu__itemLast}`}>
@@ -45,7 +47,7 @@ const Menu = () => {
             activeClassName={styles.menu__itemLinkActive}
             to="/contact"
           >
-            Kontakt
+            {t('menu.contact')}
           </Link>
         </li>
       </ul>

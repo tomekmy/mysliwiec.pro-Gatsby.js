@@ -1,18 +1,16 @@
-import i18n from 'i18next';
+import i18next from 'i18next';
 import { initReactI18next } from 'react-i18next';
-// import LanguageDetector from 'i18next-browser-languagedetector';
+import LanguageDetector from 'i18next-browser-languagedetector';
 
 // Polish translation file
 import { pl } from './lang/pl';
 // English translation file
 import { en } from './lang/en';
 
-i18n
-  // .use(LanguageDetector) Uncomment this when you want to use another language and detect default user lang
+i18next
+  .use(LanguageDetector)
   .use(initReactI18next)
   .init({
-    // Default language comes from env variable
-    lng: 'pl', // You can remove this when using LanguageDetector
     fallbackLng: 'pl',
     resources: {
       en: {
@@ -29,4 +27,4 @@ i18n
 
 // You can change language by e.g. onClick={() => i18next.changeLanguage('en')}
 
-export default i18n;
+export default i18next;

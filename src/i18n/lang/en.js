@@ -1,14 +1,19 @@
 export const en = {
-  'sendOk': 'Ok! Thanks.',
-  'sendError': 'Ups... Error!',
-  'menu': {
-    'main': 'START',
-    'about': 'ABOUT',
-    'portfolio': 'PORTFOLIO',
-    'contact': 'CONTACT'
+  frontEndDeveloper: 'Front-end Developer',
+  sendOk: 'Ok! Thanks.',
+  sendError: 'Ups... Error!',
+  menu: {
+    main: 'START',
+    about: 'ABOUT',
+    portfolio: 'PORTFOLIO',
+    contact: 'CONTACT'
   },
-  'main': {
-    'mainText': '<p>Hello.</p><p>I\'m Web Developer / Front-end Developer.</p><p>I\'m coding websites and web applications.</p>'
+  main: {
+    mainText1: 'Hello.',
+    mainText2: 'I\'m Web Developer /',
+    mainText3: 'Front-end Developer.',
+    mainText4: 'I\'m coding websites',
+    mainText5: 'and web applications.'
   },
   'contact': {
     'description': '<p>Currently I live in Zielonka near Warsaw (Poland).</p><p>If you want to contact with me please use the button links in the footer.</p>',
