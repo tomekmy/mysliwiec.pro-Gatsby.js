@@ -2,7 +2,6 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import Flip from 'react-reveal/Flip';
 
-import Layout from '../components/layout/layout';
 import SEO from '../components/seo/seo';
 
 import styles from './index.module.scss';
@@ -11,7 +10,7 @@ const IndexPage = () => {
   const { t } = useTranslation();
 
   return (
-    <Layout>
+    <>
       <SEO title="Home" />
       <div className={styles.home__text}>
         <div className={styles.home__textParagraph}>
@@ -61,7 +60,7 @@ const IndexPage = () => {
           </Flip>
         </div>
       </div>
-    </Layout>
+    </>
   );
 };
 

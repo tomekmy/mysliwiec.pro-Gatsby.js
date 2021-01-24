@@ -1,6 +1,6 @@
 import React from 'react';
-import { Link } from 'gatsby';
 import { useTranslation } from 'react-i18next';
+import AniLink from 'gatsby-plugin-transition-link/AniLink';
 import styles from './menu.module.scss';
 
 const Menu = () => {
@@ -15,40 +15,44 @@ const Menu = () => {
       </div>
       <ul className={styles.menu__items}>
         <li className={styles.menu__item}>
-          <Link
+          <AniLink
+            swipe
             className={styles.menu__itemLink}
             activeClassName={styles.menu__itemLinkActive}
             to="/"
           >
             {t('menu.main')}
-          </Link>
+          </AniLink>
         </li>
         <li className={styles.menu__item}>
-          <Link
+          <AniLink
+            swipe
             className={styles.menu__itemLink}
             activeClassName={styles.menu__itemLinkActive}
             to="/about"
           >
             {t('menu.about')}
-          </Link>
+          </AniLink>
         </li>
         <li className={styles.menu__item}>
-          <Link
+          <AniLink
+            swipe
             className={styles.menu__itemLink}
             activeClassName={styles.menu__itemLinkActive}
             to="/portfolio"
           >
             {t('menu.portfolio')}
-          </Link>
+          </AniLink>
         </li>
         <li className={`${styles.menu__item} ${styles.menu__itemLast}`}>
-          <Link
+          <AniLink
+            swipe
             className={styles.menu__itemLink}
             activeClassName={styles.menu__itemLinkActive}
             to="/contact"
           >
             {t('menu.contact')}
-          </Link>
+          </AniLink>
         </li>
       </ul>
       <div className={styles.menu__leftLine} />

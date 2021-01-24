@@ -8,11 +8,11 @@ import Footer from '../footer/footer';
 
 import './layout.scss';
 
-if (window.location.hash === '#pl') {
-  i18next.changeLanguage('pl');
-} else if (window.location.hash === '#en') {
-  i18next.changeLanguage('en');
-}
+// if (window.location.hash === '#pl') {
+//   i18next.changeLanguage('pl');
+// } else if (window.location.hash === '#en') {
+//   i18next.changeLanguage('en');
+// }
 
 const Layout = ({ children }) => {
 

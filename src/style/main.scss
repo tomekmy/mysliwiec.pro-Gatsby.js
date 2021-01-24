@@ -110,3 +110,9 @@ h5 {
   min-height: calc(100vh - 15px - 25.6rem);
   padding: 15px 3.5rem 0;
 }
+
+// Overwrite AniLink styles
+.tl-edges, .tl-wrapper {
+  height: 100% !important;
+  box-shadow: none !important;
+}

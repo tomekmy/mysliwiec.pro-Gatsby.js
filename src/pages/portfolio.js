@@ -1,15 +1,14 @@
 import React from 'react';
 
-import Layout from '../components/layout/layout';
 import SEO from '../components/seo/seo';
 
 const PortfolioPage = () => {
 
   return (
-    <Layout>
+    <div>
       <SEO title="Home" />
       Portfolio
-    </Layout>
+    </div>
   );
 };
 
