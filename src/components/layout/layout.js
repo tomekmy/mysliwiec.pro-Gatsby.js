@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import 'src/i18n';
 import i18next from 'i18next';
 import PropTypes from 'prop-types';
@@ -8,13 +8,16 @@ import Footer from '../footer/footer';
 
 import './layout.scss';
 
-// if (window.location.hash === '#pl') {
-//   i18next.changeLanguage('pl');
-// } else if (window.location.hash === '#en') {
-//   i18next.changeLanguage('en');
-// }
-
 const Layout = ({ children }) => {
+  const hash = children.props.location.hash;
+
+  useEffect(() => {
+    if (hash === '#pl') {
+      i18next.changeLanguage('pl');
+    } else if (hash === '#en') {
+      i18next.changeLanguage('en');
+    }
+  }, [hash]);
 
   return (
     <div className="content">

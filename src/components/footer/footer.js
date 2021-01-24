@@ -64,7 +64,7 @@ const Footer = () => {
       </div>
       <div className={styles.footer__languages}>
         <a
-          href={`#${currentLanguage}`}
+          href={`#${currentLanguage === 'pl' ? 'en' : 'pl'}`}
           className={styles.footer__langIcon}
           title="Zmień język"
           onClick={() => i18next.changeLanguage(currentLanguage === 'pl' ? 'en' : 'pl')}

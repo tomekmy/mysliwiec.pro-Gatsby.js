@@ -20,12 +20,6 @@ module.exports = {
     'gatsby-plugin-sitemap',
     'gatsby-plugin-offline',
     'gatsby-plugin-root-import',
-    // {
-    //   resolve: 'gatsby-plugin-layout',
-    //   options: {
-    //     component: require.resolve('./src/components/layout/layout.js'),
-    //   },
-    // },
     {
       resolve: 'gatsby-plugin-transition-link',
       options: {
