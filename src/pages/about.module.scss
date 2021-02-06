@@ -1,0 +1,79 @@
+@import 'src/style/_variables';
+
+.aboutIntro,
+.aboutSkills {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: top;
+  // padding-bottom: rem(40);
+  // @include respond-to($large-desktop) {
+  //   width: 42%;
+  // }
+  // @include respond-to($tablet-portrait) {
+  //   width: 48%;
+  // }
+}
+
+.aboutIntro {
+  font-size: 2rem;
+  text-align: left;
+  margin-right: 1%;
+  &__text {
+    // margin-bottom: rem(40);
+  }
+  p {
+    // text-indent: em($browser-context);
+    line-height: 1.2;
+  }
+  @include respond-to($large-desktop) {
+    // font-size: em(22);
+  }
+}
+
+.about-skills {
+  margin-left: 1%;
+  &__bars {
+    // margin-bottom: em(40);
+  }
+  &__percent {
+    display: inline;
+    visibility: hidden;
+    font-size: 0.05em !important;
+  }
+  &__bars div {
+    // margin: em(10) 0;
+    // padding: em(7);
+    // font-size: em(15.3);
+    text-align: right;
+    background: #ffffff;
+    background: -webkit-gradient(linear, left top, right top, from(#ffffff), color-stop(90%, #d6d7db), to(#ffffff));
+    background: linear-gradient(to right, #ffffff 0%, #d6d7db 90%, #ffffff 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=1);
+    -webkit-transition: 1s linear all;
+    transition: 1s linear all;
+    width: 0%;
+    height: 1em;
+    color: transparent;
+    @include respond-to($tablet-portrait) {
+      // font-size: em(13.6);
+    }
+    @include respond-to($large-desktop) {
+      // font-size: em(15.3);
+    }
+  }
+}
+
+.about-intro__site-text,
+.about-intro__certificates-text {
+  ul {
+    // margin: rem(20);
+    list-style: circle;
+    // font-size: em(15.3);
+    line-height: 1.2;
+    // padding-bottom: rem(20);
+  }
+  li {
+    // margin: rem(15) rem(10);
+  }
+}

@@ -27,7 +27,7 @@ export const en = {
     'emailError': 'Wrong address'
   },
   'about': {
-    'introText': '<p>I have been coding web pages since high school. Then I sat up at night in front of the monitor screen and stared at the strange and incomprehensible (for many people) HTML tags. Of course I do not have to mention that it turned out to be my passion. Thanks to this passion, later I graduated from computer science and I still love coding in languages used for web development.<p><p>Currently I working as a Front-End Team Leader in <a href=\'https://www.execon.pl/\'>Execon ITS</a> company.</p>',
+    'introText': '<p>I have been coding web pages since high school. Then I sat up at night in front of the monitor screen and stared at the strange and incomprehensible (for many people) HTML tags. Of course I do not have to mention that it turned out to be my passion. Thanks to this passion, later I graduated from computer science and I still love coding in languages used for web development.<p><p>Currently I working as a Front-End Team Leader in <a href=\'https://www.execon.pl/\'>Execon One</a> company.</p>',
     'headerCoding': 'Coding in...',
     'headerFrameworks': 'Used frameworks and libraries',
     'headerTechnologies': 'Used technologies',

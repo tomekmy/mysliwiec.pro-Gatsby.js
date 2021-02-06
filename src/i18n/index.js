@@ -22,6 +22,8 @@ i18next
     },
     react: {
       wait: true,
+      transSupportBasicHtmlNodes: true,
+      transKeepBasicHtmlNodesFor: ['br', 'strong', 'i' , 'p'],
     },
   });
 
